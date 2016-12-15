@@ -1,0 +1,12 @@
+/*	*************************************
+	Base
+	************************************* */
+body { 
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 25px;
+}
+
+
+article h2, aside h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+}

@@ -1,0 +1,79 @@
+
+/*	****************************************
+	Modules (reusable classes)
+	**************************************** */
+
+
+.container {
+	margin: 0 auto;
+	width: 95%;
+	max-width: 960px; 
+}
+
+.content {
+	text-align: left;
+	overflow: auto;
+}
+.current {
+	color: white;
+}
+/*	*************************************
+	Layout
+	************************************* */
+
+.container h1 {font-size: 40px;}
+
+.container h3 {font-size: 20px;}
+
+
+.section13, .section24 {
+	display: table-cell;
+	vertical-align: top;
+
+}
+
+.section13 {
+	margin-right: 10px;
+	width: 65%;
+	padding: 15px;
+}
+
+.section24 {
+	padding: 15px;
+}
+
+.section24 figure {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+#first img {
+	float: right;
+}
+
+#second img {
+	float: right;
+	padding: 40px 20px 20px 20px;
+}
+
+#second {
+	padding-bottom: 70px;
+}
+
+#second ul {
+	list-style-type: none;
+}
+
+#first .content{
+	background-color: #E6E6FA; 
+	padding: 10px;
+}
+#second .content{
+	background-color: #E6E6FA; 
+	padding: 10px;
+}
+
+
+
+
+
