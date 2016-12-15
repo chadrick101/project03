@@ -14,7 +14,7 @@ html, body {
 	top: 0; /* required - makes sure the menu sits where it's supposed to sit */
 	z-index: 1000; /* required - makes sure the menu doesn't get covered by anything else */
 	width: 100%; /* required - makes the menu go all the way across the viewport */
-	background-color: #3399ff; 
+	background-color: #003333; 
 }
 .main-menu ul {
 	/* standard removal of UL styles */
@@ -46,5 +46,5 @@ section {
 }
 
  /* typical - alter the bg for every other section */
-section:nth-child(even) {background-color:  #4da6ff; }
-section:nth-child(odd) {background-color: #66b3ff; }
+section:nth-child(even) {background-color:  #006666; }
+section:nth-child(odd) {background-color: #009999; }
