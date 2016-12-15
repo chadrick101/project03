@@ -16,12 +16,8 @@
 		font-size: 1em;
 		font-weight: normal;
 	}
-	fieldset { 
-		margin-bottom: 10px; 
-		width: 326px;
-	}
+
 	textarea { 
-		display: block; 
 		width: 350px;
 		height: 7rem;
 	}
@@ -29,21 +25,7 @@
 	/* The square brackets is a way to target just
 		the SUBMIT button with styles */
 	input[type="submit"] { margin-top: 10px; }
-
-	/* Secret sauce (below) - apply the class="box"
-		to any container and the elements inside will 
-		line-up nicely, side-by-side.
-		
-		USAGE: wrap all the label/input pairs you 
-		create in their own DIV and apply the 
-		class="box" to the DIV.
-	*/
-	.box { display: table-row; }
-	.box > * { 
-		display: table-cell; 
-		padding-right: 10px; 
-		margin-bottom: 10px;
-	}
+}
 
 	</style>
 </head>
@@ -58,37 +40,49 @@
             <li><a href="html-form.html">CONTACT ME</a></li>
         </ul>
     </nav>
+<section id="first">
+ <div class="container">
+	<h1>Questons?</h1>
+	 <div class="contactframe">
+		<form method="post" action="database-write.php">
 
-<h1>Phonebook Entry</h1>
-	<form method="post" action="database-write.php">
+			First name: 
+			<div>     
+				<input type="text" name="firstname" id="firstname" required autofocus>
+				<label for="firstname"></label>
+			</div>
 
-		<div class="box">
-			First name:      
-			<input type="text" name="firstname" id="firstname" required autofocus>
-			<label for="firstname"></label>
-		</div>
+			Last name: 
+			<div>   
+				<input type="text" name="lastname" id="lastname" required>
+				<label for="lastname"></label>
+			</div>
 
-		<div class="box">
-			Last name:     
-			<input type="text" name="lastname" id="lastname" required>
-			<label for="lastname"></label>
-		</div>
-
-		<div class="box">
 			Telephone:
-			<input type="text" name="phone" id="phone" required>
-			<label for="phone"></label>
-		</div>	
+			<div>
+				<input type="text" name="phone" id="phone" required>
+				<label for="phone"></label>
+			</div>
 
-		<input type="submit" value="Send">
+			Message:
+			<div>
+				<textarea name="textarea" id="textarea">
+				</textarea>
+			</div>
 
-		<p>Or go <a href=".">Back to Index</a>.</p>
+			<div>
+				<input type="submit" value="Send">
+			</div>
+	 </div>
 
-</form>
+		</form>
+ </div> <!-- Container -->
+</section>
 
     <footer>
         <a class="tzine" href="http://www.jqueryscript.net/gallery/jQuery-Portfolio-Plugin-with-Thumbnail-Growing-Effect.html"><i><b>Pluggins Found Here</b></i></a>
     </footer>
+
 
 </body>
 </html>
