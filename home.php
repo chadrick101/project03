@@ -13,13 +13,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="main-menu">
-        <ul>
-            <li><a href="start.html">HOME</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="html-form.html">CONTACT ME</a></li>
-        </ul>
-    </nav>
+    <?php include "inc/nav.inc"; ?>
 
     <!-- Top Section -->
     <section id="first">
@@ -108,30 +102,7 @@
 
     </section>
     
-    <footer>
-        <a class="tzine" href="http://www.jqueryscript.net/gallery/jQuery-Portfolio-Plugin-with-Thumbnail-Growing-Effect.html"><i><b>Pluggins Found Here</b></i></a>
-    </footer>
-
-<!-- Use the following JavaScript code to do the smooth-scroll thing on the internal links -->
-<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script>
-// From:    Smooth Scrolling by CHRIS COYIER, updated JANUARY 31, 2016
-//          https://css-tricks.com/snippets/jquery/smooth-scrolling
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 250);
-        return false;
-      }
-    }
-  });
-});
-</script>
+<?php include "inc/footer.inc"; ?>
 
 </body>
 

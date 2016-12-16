@@ -11,21 +11,13 @@
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Source+Sans+Pro" rel="stylesheet">
         
-        <!--[if lt IE 9]>
-          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+
     </head>
     
     <body>
 
     <!-- Navigation -->
-    <nav class="main-menu">
-        <ul>
-            <li><a href="start.html">HOME</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="html-form.html">CONTACT ME</a></li>
-        </ul>
-    </nav>
+    <?php include "inc/nav.inc"; ?>
 
     <section> 
 		<header>
@@ -46,10 +38,7 @@
         </div>
     </section>
 
-        <footer>
-            <a class="tzine" href="http://www.jqueryscript.net/gallery/jQuery-Portfolio-Plugin-with-Thumbnail-Growing-Effect.html"><i><b>Pluggins Found Here</b></i></a>
-        </footer>
-
+<?php include "inc/footer.inc"; ?>
         
         <!-- JavaScript includes - jQuery and our own script.js -->
 		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
