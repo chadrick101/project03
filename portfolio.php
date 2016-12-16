@@ -40,9 +40,5 @@
 
 <?php include "inc/footer.inc"; ?>
         
-        <!-- JavaScript includes - jQuery and our own script.js -->
-		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-		<script src="assets/js/script.js"></script>
-        
     </body>
 </html>
